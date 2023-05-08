@@ -15,7 +15,7 @@ function getOne(id) {
 }
 
 function create(skill) {
-	skill.id = Date.now() % 1000000
+	skill.id = Date.now() % 1000000 // in the future we will introduce something called uuid to replace this pattern - feel free to ask me about it the next time we're prompted / tempted to do this 
 	skill.expert = false
 	skills.push(skill)
 }
