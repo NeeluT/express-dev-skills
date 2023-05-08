@@ -2,5 +2,8 @@
 
     <h3><%= skill.skill %></h3>
     <h3>Experiance level: <%= skill.expert ? 'Expert' : 'Not Expert' %></h3>
+    <form action="/skills/<%= skill.id %>?_method=DELETE" method="POST">
+        <button type="submit">X</button>
+    </form>
 
     <%- include('../partials/footer') %>
